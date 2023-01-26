@@ -17,7 +17,7 @@ export const InfoItem = ({
     currentHref = text && text.startsWith('http') ? text : `https://${text}`
   }
   return (
-    <div className={`${styles.infoItem}${text ? '' : `${styles.empty}`}`}>
+    <div className={`${styles.infoItem}${text ? '' : ` ${styles.empty}`}`}>
       {icon}
       <div>
         {text && isLink ? (
